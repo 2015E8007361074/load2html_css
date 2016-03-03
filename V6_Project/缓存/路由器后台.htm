@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://hiwifi.com/turbo-static/turbo/mobile/image/apple-touch-icon-57n.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://hiwifi.com/turbo-static/turbo/mobile/image/apple-touch-icon-72n.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://hiwifi.com/turbo-static/turbo/mobile/image/apple-touch-icon-114n.png"> 
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://hiwifi.com/turbo-static/turbo/mobile/image/apple-touch-icon-144n.png">
+<title>路由器后台</title>
+<style type="text/css">
+a{ behavior:url(/turbo-static/turbo/web/images/blur.htc);} /* 批量去除链接焦点 */
+#weixin_img {position: absolute;margin-top: -138px;margin-left: 280px; display:none; cursor:pointer;}
+</style>
+<script type="text/javascript" src="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/jquery-1.js"></script>
+<script type="text/javascript" src="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/jquery.js"></script>
+<script type="text/javascript" src="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/interface.js"></script>
+<!--[if lt IE 9]>
+<script type="text/JavaScript" src="/turbo-static/turbo/web/js/curvycorners.src.js?v=6017"></script>
+<![endif]-->
+<script src="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/util.js"></script>
+<script src="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/storage.js"></script>
+<script src="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/translator.js"></script>
+<script type="text/javascript">
+//如果是内部页，父级页面刷新,登录
+if(window.top!=this){ 
+	 parent.location.reload();
+}
+
+</script>
+<link rel="stylesheet" href="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/style.css" type="text/css">
+<link rel="stylesheet" href="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/retina.css" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)">
+<link rel="stylesheet" href="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/sd.css" type="text/css">
+
+</head>
+<body id="login">
+<!-- this_line_is_for_loginpage_cache_donot_delete -->
+<div id="loginbox" style="position:relative;">
+    <div class="sd-tip-bar" style="display:none">
+        <span id="sd_icon" class="icon-i-y"></span><span id="sd_info"></span>
+    </div>
+	<a href="http://www.hiwifi.com/" target="_blank" class="gobtn">去 官 网</a>
+	<form id="loginform" name="loginform" method="post" action="/cgi-bin/turbo/admin_web" onsubmit="return check_form(this);"> 
+	
+		<input autocomplete="off" name="username" value="admin" type="hidden">
+		<label>路由器密码</label><input autocomplete="off" class="txt" name="password" id="input_password1" type="password">
+		<input id="submit_btn" value="登录" class="btn" type="submit">
+		<img style="display:none;position:absolute; padding-top: 10px;" id="loading2" src="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/loading.gif" alt="极路由 路由器">
+		<br>
+		
+		
+			
+			<br><img src="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/alert-icon.png" height="15"> 密码为 admin, 不安全, 请登录后点击右上  "修改密码"
+			
+		
+	
+	</form>
+	<div id="weixin_img"><img src="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/weixin1.jpg"></div>
+</div> 
+
+<div id="footer">
+	<div class="wrap">
+		<p class="system_info">系统版本 : HC5661 - 0.9006.2.6020s<span class="pipe"></span>MAC : <span id="buttonmac">D4EE0707BABC</span><span class="pipe"></span>服务热线  : <span id="iphonenum">40060-24680</span></p>
+		<p class="bottom_menu">
+			© 2014 极路由 版权所有
+			<span class="pipe">|</span><a href="http://www.hiwifi.com/" target="_blank">官方网站</a>
+			<span class="pipe">|</span><a href="http://bbs.hiwifi.com/forum.php" target="_blank">极客社区</a>
+			<span class="pipe">|</span><a href="javascript:void();" id="weixin" target="_blank">官方微信</a>
+			<span class="pipe">|</span><a href="http://www.hiwifi.com/twxredirect/?type=products" target="_blank" id="buy"><img src="%E8%B7%AF%E7%94%B1%E5%99%A8%E5%90%8E%E5%8F%B0_files/buy.png" alt="优惠购买" border="0"></a>
+			<span class="pipe">|</span><a href="javascript:switch_interface_type('mobile','/cgi-bin/turbo/admin_mobile');">移动版界面</a>
+		</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var sys_board = 'HC5661';
+
+	function check_form(obj){
+		
+		if(obj.password.value==""){
+			obj.password.focus();
+			return false;
+		}
+		
+		$(".tips").hide();
+		$("#loading2").show();
+		
+		return true;
+	}
+
+	function preloaderFile(){
+		for(var i=0;i<arguments.length;i++){
+			new Image().src = arguments[i];
+		}
+	}
+
+	$(function(){
+		
+		var sUserAgent = navigator.userAgent.toLowerCase();
+		
+		var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";  
+		var bIsAndroid = sUserAgent.match(/android/i) == "android";
+		var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";  
+		
+		if(bIsIphoneOs){$("#iphonenum").html('<a href="callto:4006024680" style="color:#ddd;">40060-24680 <img border="0" src="/turbo-static/turbo/web/images/calling.png"></a>')}
+		if(bIsAndroid){$("#iphonenum").html('<a href="wtai://wp/mc;4006024680" style="color:#ddd;">40060-24680 <img border="0" src="/turbo-static/turbo/web/images/calling.png"></a>')}
+		if(bIsWM){$("#iphonenum").html('<a href="tel:4006024680" style="color:#ddd;">40060-24680 <img border="0" src="/turbo-static/turbo/web/images/calling.png"></a>')}
+		
+		setTimeout(function(){
+
+			document.forms["loginform"].elements["password"].focus();
+
+			preloaderFile("/turbo-static/turbo/web/js/artDialog/jquery.artDialog.js?skin=blueskin",
+					"/turbo-static/turbo/web/js/util.js?v=6017",
+				    "/turbo-static/turbo/web/js/artDialog/skins/blueskin.css?v=6017",
+				    "/turbo-static/turbo/web/css/retina.css?v=6017",
+					"/turbo-static/turbo/web/js/artDialog/plugins/iframeTools.source.js?v=6017",
+					"/turbo-static/turbo/web/js/curvycorners.src.js?v=6017",
+					"/turbo-static/turbo/web/js/share_content.js?v=6017",
+					"/turbo-static/turbo/web/js/artDialog/plugins/iframeTools.source.js?v=6017",
+					
+					"/turbo-static/turbo/web/images/weixin1.jpg",
+					
+					"/turbo-static/turbo/web/images/addmac.png",
+					"/turbo-static/turbo/web/images/alert.png",
+					"/turbo-static/turbo/web/images/alert-icon.png",
+					"/turbo-static/turbo/web/images/alert-icon@2x.png",
+					"/turbo-static/turbo/web/images/alert-icon-ie6.png",
+					"/turbo-static/turbo/web/images/alert-icon-retina.png",
+					"/turbo-static/turbo/web/images/background.png",
+					"/turbo-static/turbo/web/images/binded.png",
+					"/turbo-static/turbo/web/images/binded@2x.png",
+					"/turbo-static/turbo/web/images/binded_ie6.png",
+					"/turbo-static/turbo/web/images/blur.htc",
+					"/turbo-static/turbo/web/images/device_icon.png",
+					"/turbo-static/turbo/web/images/device_icon@2x.png",
+					"/turbo-static/turbo/web/images/device_icon_ie6.png",
+					"/turbo-static/turbo/web/images/footer_line.png",
+					"/turbo-static/turbo/web/images/footer_line@2x.png",
+					"/turbo-static/turbo/web/images/header_shadow.png",
+					"/turbo-static/turbo/web/images/header_shadow_ie6.png",
+					"/turbo-static/turbo/web/images/icons-32x32.png",
+					"/turbo-static/turbo/web/images/input_txt_bg.png",
+					"/turbo-static/turbo/web/images/lightning.png",
+					"/turbo-static/turbo/web/images/lightning@2x.png",
+					"/turbo-static/turbo/web/images/login_btn.png",
+					"/turbo-static/turbo/web/images/login_logo_130726.png",
+					"/turbo-static/turbo/web/images/login_logo_130726@2x.png",
+					"/turbo-static/turbo/web/images/loginbox_shadow.png",
+					"/turbo-static/turbo/web/images/logo_130726.png",
+					"/turbo-static/turbo/web/images/logo_130726@2x.png",
+					"/turbo-static/turbo/web/images/logo_grey.png",
+					"/turbo-static/turbo/web/images/nav_pipe.png",
+					"/turbo-static/turbo/web/images/on-off.png",
+					"/turbo-static/turbo/web/images/on-off-ie6.png",
+					"/turbo-static/turbo/web/images/pipe_line.png",
+					"/turbo-static/turbo/web/images/radio-icon.png",
+					"/turbo-static/turbo/web/images/round_buttons_130715.png",
+					"/turbo-static/turbo/web/images/round_buttons_130715@2x.png",
+					"/turbo-static/turbo/web/images/round_buttons_130715_ie6.png",
+					"/turbo-static/turbo/web/images/s1_130715.png",
+					"/turbo-static/turbo/web/images/s1_130715-ie6.png",
+					"/turbo-static/turbo/web/images/s2_130715.png",
+					"/turbo-static/turbo/web/images/s2_130715-ie6.png",
+					"/turbo-static/turbo/web/images/s3_130715.png",
+					"/turbo-static/turbo/web/images/s3_130715-ie6.png",
+					"/turbo-static/turbo/web/images/sd_130715.png",
+					"/turbo-static/turbo/web/images/sd_130715-ie6.png",
+					"/turbo-static/turbo/web/images/cloud_guide.png",
+					"/turbo-static/turbo/web/images/cloud_guide_ie6.png",
+					"/turbo-static/turbo/web/images/info_all.png",
+					"/turbo-static/turbo/web/images/info_all_ie6.png",
+					"/turbo-static/turbo/web/images/signal0.png",
+					"/turbo-static/turbo/web/images/signal1.png",
+					"/turbo-static/turbo/web/images/signal2.png",
+					"/turbo-static/turbo/web/images/signal3.png",
+					"/turbo-static/turbo/web/images/signal4.png",
+					"/turbo-static/turbo/web/images/slash.png",
+					"/turbo-static/turbo/web/images/bg130930@2x.png",
+					"/turbo-static/turbo/web/images/bg130930.png",
+					"/turbo-static/turbo/web/images/sidenav_icons_130715@2x.png",
+					"/turbo-static/turbo/web/images/sidenav_icons_130715.png",
+					"/turbo-static/turbo/web/images/sidenav_icons_130715_ie6.png",
+					"/turbo-static/turbo/web/images/stream.gif",
+					"/turbo-static/turbo/web/images/stream@2x.gif",
+					"/turbo-static/turbo/web/images/tabs_bg.png",
+					"/turbo-static/turbo/web/js/artDialog/skins/icons/succeed.png",
+					"/turbo-static/turbo/web/js/artDialog/skins/icons/warning.png",
+					"/turbo-static/turbo/web/js/artDialog/skins/icons/wait.png",
+					"/turbo-static/turbo/web/js/artDialog/skins/icons/question.png",
+					"/turbo-static/turbo/web/js/artDialog/skins/icons/loading.gif",
+					"/turbo-static/turbo/web/js/artDialog/skins/icons/error.png")
+		},1000);
+		
+	$("#weixin,#weixin_img").hover(
+		function(){
+			$("#weixin_img").show();
+		},function(){
+			$("#weixin_img").hide();
+		}
+	)
+	
+	$("#weixin,#weixin_img").click(function(){
+		if ($("#weixin_img").css("display") == "block"){
+			$("#weixin_img").hide();
+		} else {
+			$("#weixin_img").show();
+		}
+	})
+	
+    get_sata_state();
+	});
+	
+	var laststate = null;
+    var sd_error = false;
+    var laststatetime = 0;
+
+    function now(){
+        var myDate = new Date();
+        return myDate.getTime();
+    }
+    
+    function translate(key){
+        return translator.translate(key);
+    }
+	function get_sata_state(){
+        var myDate = new Date();
+        var mill = myDate.getTime();
+	    var request_data = {};
+        $.getJSON('/cgi-bin/turbo/api/storage/state?'+mill,request_data,function(rsp) 
+        { 
+            var msg = rsp.msg;
+            var code = rsp.code;
+            var state = rsp.state;
+            var sdsize = rsp.size;
+            var minsize = rsp.minsize;
+            var type = "";
+            if(rsp.data){
+                type = rsp.data.type;
+            }
+            if(state != laststate){
+                sd_error = false;
+                $(".sd-tip-bar").hide();
+                laststatetime = now();
+            }
+            laststate = state;
+            if(code == 0 || code == "0"){
+                if(type != 'NULL'){
+                    if(state == "removed"){
+                        $(".sd-tip-bar").removeClass("yellow").addClass("yellow");
+                        $("#sd_info").html("未插入"+translate(type));
+                        $("#sd_icon").addClass("icon-i-y").removeClass("icon-i");
+                        $(".sd-tip-bar").show();
+                    }else if(state == "not-formated" || state == "mount-failed"){
+                        if(storage.compare_size(sdsize, minsize) < 0){
+                            $(".sd-tip-bar").removeClass("yellow");
+                            $("#sd_info").html(translate(type)+"太小，最低要求"+storage.conversion(minsize, 'G')+"，当前"+storage.conversion(sdsize, 'G'));
+                            $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                            $(".sd-tip-bar").show();
+                        }else{
+                            $(".sd-tip-bar").removeClass("yellow");
+                            $("#sd_info").html("您的"+translate(type)+"文件格式不符，请登录后格式化。");
+                            $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                            $(".sd-tip-bar").show();
+                        }
+                    }else if(state == "inserted"){
+                        setTimeout(function(){
+                            if(laststate == "inserted" && laststatetime + 10 < now()){
+                                $(".sd-tip-bar").removeClass("yellow");
+                                $("#sd_info").html(translate(type)+"有异常，请重启路由器");
+                                $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                                $(".sd-tip-bar").show();
+                                sd_error = true;
+                            }
+                        }, 10000);
+                    }else if(state == "umounted"){
+                        setTimeout(function(){
+                            if(laststate == "umounted" && laststatetime + 10 < now()){
+                                $(".sd-tip-bar").removeClass("yellow");
+                                $("#sd_info").html("请拔掉"+translate(type)+"再插上");
+                                $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                                $(".sd-tip-bar").show();
+                                sd_error = true;
+                            }
+                        }, 10000);
+                    }else if(state == "mounted"){
+                        $(".sd-tip-bar").hide();
+                    }else if(state == "auto-formated"){
+                        $(".sd-tip-bar").removeClass("yellow").addClass("yellow");
+                        $("#sd_info").html(translate(type)+"正在格式化中...");
+                        $("#sd_icon").addClass("icon-i-y").removeClass("icon-i");
+                        $(".sd-tip-bar").show();
+                        setTimeout(function(){
+                            if(laststate == "auto-formated" && laststatetime + 10 < now()){
+                                $(".sd-tip-bar").removeClass("yellow");
+                                $("#sd_info").html("请拔掉"+translate(type)+"再插上");
+                                $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                                $(".sd-tip-bar").show();
+                                sd_error = true;
+                            }
+                        }, 120000);
+                    }else if(state == "lock"){
+                        $(".sd-tip-bar").removeClass("yellow");
+                        $("#sd_info").html("扩展存储为只读模式");
+                        $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                        $(".sd-tip-bar").show();
+                    }
+                }
+                setTimeout("get_sata_state()", 5000);
+            }
+        })
+        .fail(function(rsp){
+            setTimeout("get_sata_state()", 5000);
+        });
+    	
+	}
+</script>
+
+
+</body></html>

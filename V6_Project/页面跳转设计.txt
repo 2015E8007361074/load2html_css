@@ -1,0 +1,5 @@
+1.-> welcome.html(先进入免责说明页，同意则进入登陆界面) 
+
+2.-> login.html （使用密码登陆）
+
+3.-> admin.html （配置页面）

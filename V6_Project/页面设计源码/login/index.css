@@ -1,0 +1,259 @@
+/* ::::: [internal] ::::: */
+
+a {  }
+#weixin_img { position: absolute; margin-top: -138px; margin-left: 280px; display: none; cursor: pointer; }
+/* ::::: http://hiwifi.com/turbo-static/turbo/web/css/style.css?v=6017 ::::: */
+
+body { font-size: 12px; font-family: Microsoft Yahei,Verdana,Arial,sans-serif; color: rgb(102, 102, 102); margin: 0px; padding: 0px; line-height: 20px; }
+body#home { text-align: center; background: rgb(0, 142, 199) url("background.png") no-repeat scroll center -90px; }
+a { color: rgb(54, 170, 214); text-decoration: none; }
+a:hover { color: rgb(173, 212, 91); }
+img {  }
+ul, ol, li { margin: 0px; padding: 0px; list-style: outside none none; }
+h1, h2, h3, h4, p, form, textarea, input { margin: 0px; padding: 0px; }
+.clear { clear: both; }
+.hidden { display: none; }
+.pipe { margin: 0px 8px; color: rgb(153, 153, 153); }
+#header { margin-bottom: 5px; background: transparent url("header_shadow.png") no-repeat scroll center bottom; padding-bottom: 10px; }
+#header .wrap { height: 65px; background: rgb(215, 241, 252) none repeat scroll 0% 0%; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+#header .top_menu { float: right; margin: 10px 20px 0px 0px; }
+#header .top_menu .pipe { float: left; }
+#header .top_menu a { display: block; float: left; }
+#header .top_menu a .icon { width: 16px; height: 16px; display: block; float: left; margin-right: 5px; position: relative; top: 2px; }
+#header .top_menu a#system_netdetect .icon { background-image: url("look-over.png"); background-repeat: no-repeat; background-position: 0px 0px; }
+#header .top_menu a#setting_guide .icon { background-image: url("guidepost.png"); background-repeat: no-repeat; background-position: 0px 0px; }
+#header .top_menu a#system_config img { position: relative; top: 2px; }
+#header .top_menu .spotbar { display: block; margin-bottom: 8px; text-align: right; }
+#header .top_menu .spotbar .spot { width: 100px; height: 16px; line-height: 16px; padding: 2px 20px 2px 2px; border: 1px solid rgb(180, 206, 220); background-color: rgb(255, 255, 255); background-image: url("spot.png"); background-repeat: no-repeat; background-position: 102px center; position: relative; top: 2px; transition: width 400ms ease 0s, background 400ms ease 0s; }
+#header .top_menu .spotbar .spot:focus { width: 240px; border: 1px solid rgb(180, 206, 220); background-color: rgb(255, 255, 255); background-position: 242px center; cursor: text; outline: 0px none; }
+#header #logo { display: block; position: absolute; margin: 12px 0px 0px 15px; width: 119px; height: 48px; background: transparent url("logo_130726.png") no-repeat scroll 0% 0%; text-indent: -9999px; overflow: hidden; }
+.wrap { width: 960px; margin: 0px auto; text-align: left; }
+#content {  }
+#main { height: 500px; padding-left: 135px; background: transparent url("bg_131206.png") no-repeat scroll 135px -20px; }
+#side { width: 115px; height: 410px; overflow: hidden; position: absolute; top: auto; border: 1px solid rgb(215, 241, 252); margin-top: 15px; padding: 15px 0px; background: rgb(0, 142, 199) none repeat scroll 0% 0%; border-radius: 10px; }
+#nav li { text-align: center; }
+#nav li { background: transparent url("nav_pipe.png") no-repeat scroll center bottom; padding-bottom: 8px; margin-bottom: 10px; text-align: center; }
+#nav li a { display: block; width: 87px; margin: 0px auto; height: 25px; padding-top: 62px; font-size: 12px; font-family: Microsoft Yahei; color: rgb(212, 241, 252); background-image: url("sidenav_icons_130715.png"); background-repeat: no-repeat; background-position: 0px -15px; }
+#nav li a#home { background-position: 0px -10px; }
+#nav li a#guide { background-position: 0px -10px; }
+#nav li a#state { background-position: 0px -122px; }
+#nav li a#options { background-position: 0px -229px; }
+#nav li a#mobile { background-position: 0px -342px; }
+#nav li a#home:hover, #nav li.selected a#home { background-position: -107px -10px; color: rgb(170, 223, 36); }
+#nav li a#guide:hover, #nav li.selected a#guide { background-position: -107px -10px; color: rgb(170, 223, 36); }
+#nav li a#state:hover, #nav li.selected a#state { background-position: -107px -122px; color: rgb(170, 223, 36); }
+#nav li a#options:hover, #nav li.selected a#options { background-position: -107px -229px; color: rgb(170, 223, 36); }
+#nav li a#mobile:hover, #nav li.selected a#mobile { background-position: -107px -342px; color: rgb(170, 223, 36); }
+#internet { position: absolute; margin-left: 78px; margin-top: 135px; width: 74px; height: 186px; font-size: 14px; cursor: pointer; }
+#internet .txt { display: block; height: 30px; line-height: 30px; text-align: center; color: rgb(255, 255, 255); }
+#internet:hover .txt { color: rgb(213, 241, 254); }
+#internet .icon { display: block; width: 74px; height: 78px; overflow: hidden; background-image: url("internet_icon.png"); background-repeat: no-repeat; background-position: 0px 0px; }
+#internet:hover .icon { background-position: right top; }
+#map a { position: absolute; cursor: pointer; }
+#map a .icon { position: absolute; display: block; width: 120px; height: 120px; line-height: 120px; text-align: center; background: transparent url("round_buttons_130715.png") no-repeat scroll 0% 0%; text-indent: -9999px; overflow: hidden; }
+#map a .txt { display: block; width: 120px; height: 120px; font-size: 14px; color: rgb(255, 255, 255); }
+#map a:hover .txt { color: rgb(213, 241, 254); }
+#map a#set_wifi { display: block; width: 120px; height: 170px; margin-left: 686px; margin-top: 90px; }
+#map a#set_wifi:hover .icon { background-position: 0px -120px; }
+#map a#set_wifi .txt { width: 115px; height: 50px; line-height: 50px; text-align: right; padding-right: 5px; }
+#map a#set_network { width: 205px; height: 155px; line-height: 155px; margin-top: 333px; margin-left: 57px; }
+#map a#set_network .icon { background-position: -240px 0px; }
+#map a#set_network .txt { width: 205px; height: 35px; line-height: 35px; text-align: right; }
+#map a#set_network:hover .icon { background-position: -240px -120px; }
+#map a#set_network.ok .icon { background-position: -120px 0px; }
+#map a#set_network.ok:hover .icon { background-position: -120px -120px; }
+#map a#set_wifi .icon { transition: transform 0.4s ease-out 0s; }
+#map a#set_wifi:hover .icon { transform: rotate(360deg); }
+.stream { width: 441px; height: 188px; position: absolute; background-image: url("stream_131206.gif"); background-repeat: no-repeat; margin-top: 244px; margin-left: 115px; }
+.alert-icon i { position: absolute; width: 24px; height: 24px; display: block; background: transparent url("alert-icon.png") no-repeat scroll 0% 0%; z-index: 55; }
+.alert-icon i.wifi-alert { margin-top: 148px; margin-left: 777px; }
+.alert-icon i.network-alert { margin-top: 375px; margin-left: 148px; }
+.alert-icon i.cloud-alert { margin-top: 38px; margin-left: 520px; }
+#nav li a#state .alert-icon { position: absolute; width: 24px; height: 24px; display: block; background: transparent url("alert-icon.png") no-repeat scroll 0% 0%; z-index: 55; margin-top: -75px; margin-left: 50px; }
+#lans_list { width: 147px; height: 28px; position: absolute; margin-top: 379px; margin-left: 556px; }
+#lans_list .offline { width: 36px; height: 28px; display: block; float: left; margin-right: 1px; }
+#lans_list #lan4 { margin-right: 0px; }
+#lans_list .lightning { background-image: url("lightning_131031.png"); background-repeat: no-repeat; }
+#devices { height: 22px; line-height: 22px; position: absolute; margin-top: 189px; margin-left: 296px; overflow: hidden; padding: 5px 10px; }
+#devices a { color: rgb(255, 255, 255); font-size: 13px; width: 193px; height: 36px; line-height: 36px; display: block; padding-left: 36px; text-align: left; }
+#devices a em { font-style: normal; color: yellow; padding: 0px 5px; }
+#devices a span { float: right; margin-right: 5px; font-size: 10px; }
+#devices a:hover { color: rgb(212, 241, 255); }
+#services { position: absolute; margin-left: 304px; }
+#services a { display: block; width: 240px; height: 120px; margin-top: 0px; }
+#services a span { display: block; float: left; text-align: center; color: rgb(255, 255, 255); cursor: pointer; }
+#services a:hover span { color: rgb(213, 241, 254); }
+#services a#plug-in .icon { width: 120px; height: 120px; background-image: url("round_buttons_130715.png"); background-position: -360px 0px; }
+#services a#plug-in:hover .icon { background-position: -360px -120px; }
+#services a#plug-in .txt { float: right; width: 107px; height: 120px; line-height: 120px; text-align: right; font-size: 14px; padding-right: 13px; }
+#reboot { position: absolute; margin-top: 430px; margin-left: 717px; display: block; width: 60px; height: 24px; background-image: url("reboot_icon.png"); background-repeat: no-repeat; background-position: center top; }
+#reboot:hover { background-position: center -24px; }
+#reboot span { display: block; text-align: center; position: relative; top: 24px; color: rgb(255, 255, 255); }
+#reboot:hover span { color: rgb(213, 241, 254); }
+#footer .wrap { background: transparent url("footer_line.png") no-repeat scroll center top; padding-top: 5px; }
+#footer p { text-align: center; font-size: 12px; color: rgb(187, 187, 187); }
+#footer p.bottom_menu { color: rgb(221, 221, 221); }
+#footer p.bottom_menu a { color: rgb(221, 221, 221); }
+#footer p.bottom_menu a:hover { color: rgb(204, 204, 204); }
+#footer p.bottom_menu a#buy img { position: relative; top: 6px; }
+body#login { text-align: center; background: rgb(0, 142, 199) url("background.png") no-repeat scroll center -180px; }
+#loginbox { width: 618px; height: 360px; margin: 100px auto 0px; padding: 20px; background: rgb(241, 250, 254) url("logo.png") no-repeat scroll center 60px; border-radius: 10px; min-width: 618px; }
+#loginbox a.gobtn { position: absolute; right: 20px; display: block; width: 80px; height: 25px; line-height: 25px; text-align: left; padding-left: 18px; background: transparent url("go_btn.png") no-repeat scroll 0% 0%; font-size: 13px; color: rgb(255, 255, 255); }
+#loginbox a.gobtn:hover { top: 19px; right: 19px; }
+#login_logo { margin: 40px 0px; }
+#loginform { background: transparent url("pipe_line.png") no-repeat scroll center top; margin-top: 200px; padding-top: 40px; }
+#loginform label { height: 36px; line-height: 36px; margin-right: 8px; font-size: 16px; color: rgb(153, 153, 153); font-family: Microsoft Yahei; position: relative; }
+#loginform .txt { margin-right: 8px; width: 150px; height: 34px; line-height: 34px; border: 1px solid rgb(205, 205, 205); background: transparent url("input_txt_bg.png") repeat-x scroll 0% 0%; padding: 0px 3px; font-size: 16px; color: rgb(51, 51, 51); font-family: Microsoft Yahei; }
+#loginform .btn { margin: 0px; width: 76px; height: 36px; line-height: 36px; border: medium none; padding: 0px 1px 2px; background: transparent url("login_btn.png") no-repeat scroll 0% 0%; font-size: 16px; color: rgb(255, 255, 255); font-family: Microsoft Yahei; cursor: pointer; }
+#loginform .error { border: 1px solid rgb(255, 64, 0); }
+#loginform .tips { height: 36px; line-height: 36px; margin-top: 15px; color: rgb(255, 64, 0); font-size: 14px; font-family: Microsoft Yahei; }
+#login #footer .wrap { height: 80px; background: transparent url("loginbox_shadow.png") no-repeat scroll center top; overflow: hidden; }
+.pop {  }
+.pop_page {  }
+.aui_title { display: none ! important; }
+.title { height: 60px; line-height: 60px; background: rgb(245, 244, 244) none repeat scroll 0% 0%; border-bottom: 1px solid rgb(197, 197, 197); padding: 0px 30px; margin-bottom: 20px; }
+.title h2 { font-size: 16px; }
+.title h2 i { font-style: normal; margin-left: 10px; font-size: 12px; color: rgb(153, 153, 153); }
+.tabs { padding: 0px 20px; height: 41px; position: relative; }
+.tabs a { display: block; float: left; width: 126px; padding: 0px 10px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(221, 221, 221); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; font-size: 14px; }
+.tabs a .tab-text { display: block; height: 40px; line-height: 40px; background: transparent url("radio-icon.png") no-repeat scroll 0px -50px; padding-left: 40px; }
+.tabs a.selected { border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) rgb(255, 255, 255); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; }
+.tabs a.selected .tab-text { background-position: 0px 6px; }
+.box { border: 1px solid rgb(221, 221, 221); margin: 0px 20px; padding: 10px 10px 20px; height: auto; }
+.menu { position: absolute; margin: 0px 0px 0px 20px; width: 150px; height: 30px; line-height: 30px; font-size: 14px; font-family: Microsoft Yahei; background: rgb(244, 244, 244) none repeat scroll 0% 0%; text-align: left; border-top: 1px solid rgb(221, 221, 221); }
+.menu a { padding-left: 15px; display: block; border-width: medium 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgb(221, 221, 221) rgb(221, 221, 221); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; background: rgb(249, 249, 249) none repeat scroll 0% 0%; }
+.menu a.selected { color: rgb(173, 212, 91); border-right-color: rgb(255, 255, 255); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.menu .pipe { display: none; }
+.setup_box { margin-left: 169px; height: 460px; padding: 20px 10px 10px; overflow-y: scroll; }
+.setup_box .btnbox { padding-left: 190px; }
+.memu p { clear: both; height: 32px; line-height: 32px; margin-bottom: 10px; text-align: left; }
+.memu p label { margin-right: 8px; font-size: 14px; }
+.memu p .txt { width: 150px; height: 30px; line-height: 30px; border: 1px solid rgb(205, 205, 205); background: transparent url("input_txt_bg.png") repeat-x scroll 0% 0%; padding: 0px 3px; font-size: 16px; color: rgb(51, 51, 51); font-family: Microsoft Yahei; margin-right: 8px; }
+.memu p.tips { clear: both; height: 36px; line-height: 36px; margin: 10px 0px 0px; color: rgb(255, 64, 0); font-size: 14px; font-family: Microsoft Yahei; }
+.memu .menu { text-align: center; }
+.memu .menu label.selected { color: rgb(54, 170, 214); }
+.btnbox { padding: 10px 0px 0px 150px; }
+.btn { height: 36px; line-height: 36px; border: medium none; background: rgb(0, 153, 210) none repeat scroll 0% 0%; font-size: 14px; font-family: Microsoft Yahei; font-weight: 700; color: rgb(255, 255, 255); padding: 0px 30px; cursor: pointer; }
+.btn_s { height: 21px; line-height: 21px; border: medium none; background: rgb(0, 153, 210) none repeat scroll 0% 0%; font-size: 12px; font-family: Microsoft Yahei; font-weight: 100; color: rgb(255, 255, 255); padding: 0px 3px; cursor: pointer; }
+.row { padding: 0px 0px 0px 90px; }
+.row p label { position: absolute; height: 32px; line-height: 32px; }
+.row p .txt { margin-left: 100px; }
+.row p .slt { width: auto; }
+.memu .items { font-size: 14px; text-align: center; margin: 20px 0px 0px; }
+.tie { padding-left: 20px; }
+.ps { padding: 10px 0px; color: rgb(153, 153, 153); }
+.pppoe_box { padding: 24px 0px 0px 110px; }
+.ip_box #ip_type_static_table { padding: 20px 0px 10px 42px; }
+.ip_box #ip_type_static_table p label { width: 100px; display: block; float: left; height: 32px; line-height: 32px; text-align: right; }
+.ip_box #ip_type_static_table p .txt { float: left; }
+.info {  }
+.info_box {  }
+.info_box .tit { width: 300px; position: relative; top: -22px; }
+.info_box p { height: 32px; line-height: 32px; }
+.info_box p b { position: absolute; color: rgb(153, 153, 153); }
+.info_box p span { padding-left: 100px; font-size: 14px; color: rgb(0, 0, 0); }
+.info_box p.bind_btn { height: 36px; line-height: 36px; margin: 20px 0px; }
+.info_box p.bind_msg { color: rgb(153, 153, 153); font-size: 12px; }
+.routers { padding: 0px 20px 20px; }
+.routers .tips { font-size: 12px; color: rgb(51, 51, 51); padding: 0px 8px; }
+.routers-table { border-top: 1px solid rgb(238, 238, 238); }
+.routers-table th, .routers-table td { border-bottom: 1px solid rgb(238, 238, 238); text-align: left; padding: 8px; font-size: 12px; color: rgb(102, 102, 102); }
+.routers-table th { font-weight: 700; color: rgb(51, 51, 51); background: rgb(249, 249, 249) none repeat scroll 0% 0%; }
+.routers-table .mac { width: 110px; }
+.routers-table .ip { width: 110px; }
+.routers-table .name { color: rgb(51, 51, 51); font-weight: 700; }
+.routers-table .signal span.level2 { background-position: 0px -29px; }
+.routers-table .signal span.level3 { background-position: 0px -58px; }
+.routers-table .setting { width: 100px; }
+.routers-table .setting .swich { padding: 2px 5px; text-decoration: none; cursor: pointer; font-size: 12px; }
+.routers-table .setting .swich:hover { background: rgb(91, 198, 0) none repeat scroll 0% 0%; }
+.routers-table .setting .mac_on { background: rgb(91, 198, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.routers-table .setting .mac_on:hover { background: rgb(150, 218, 91) none repeat scroll 0% 0%; }
+.routers-table .setting .mac_off { background: rgb(153, 153, 153) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.routers-table .setting .mac_off:hover { background: rgb(187, 187, 187) none repeat scroll 0% 0%; }
+.routers-table .setting .local { padding: 2px 5px; color: rgb(153, 153, 153); }
+.content { padding: 0px 20px 20px; }
+.area { padding: 0px 15px; }
+.group {  }
+.group .item-title { margin-bottom: 5px; font-size: 14px; }
+.group .item-txt { line-height: 30px; margin-bottom: 10px; }
+.group .item-txt span { margin-right: 10px; }
+.group .item-list li { width: 152px; float: left; margin: 0px 10px 10px 0px; }
+.group .item-list .txt-input { width: 150px; height: 24px; line-height: 24px; border: 1px solid rgb(205, 205, 205); background: transparent url("input_txt_bg.png") repeat-x scroll 0% 0%; padding: 0px 2px; font-size: 14px; color: rgb(51, 51, 51); font-family: Microsoft Yahei; }
+.group .error { font-size: 12px; color: red; line-height: 30px; margin-bottom: 5px; }
+.group .form-row { height: 30px; line-height: 30px; margin: 5px 0px; }
+.group .form-row .label { position: absolute; height: 30px; line-height: 30px; color: rgb(153, 153, 153); }
+.group .form-row span { margin-left: 100px; }
+.group .txt-input { width: 180px; height: 24px; line-height: 24px; border: 1px solid rgb(205, 205, 205); background: transparent url("input_txt_bg.png") repeat-x scroll 0% 0%; padding: 0px 2px; font-size: 16px; color: rgb(51, 51, 51); font-family: Microsoft Yahei; }
+.group .select { width: 186px; height: 24px; line-height: 24px; font-size: 12px; }
+.group .form-button { margin: 0px 0px 0px 100px; }
+.group .board { border: 1px dashed rgb(221, 221, 221); padding: 15px; margin: 20px 0px 0px; color: rgb(102, 102, 102); font-size: 14px; text-align: center; }
+.group .alert { background: transparent url("alert.png") no-repeat scroll 15px center; padding: 15px 15px 15px 55px; font-size: 12px; color: rgb(153, 153, 153); text-align: left; }
+.sheet { padding: 0px 20px; }
+.sheet .unit { clear: both; border: 1px solid rgb(221, 221, 221); margin-bottom: 10px; padding: 10px 20px; border-radius: 5px; display: block; }
+.sheet .unit h3 { font-size: 13px; color: rgb(54, 170, 214); padding-bottom: 3px; }
+.sheet .unit li { clear: both; line-height: 21px; }
+.sheet .unit li p { color: rgb(153, 153, 153); }
+.sheet .unit li p b { width: 90px; float: left; }
+.sheet .unit li p a { margin: 0px 10px; }
+.on-off { height: 26px; line-height: 26px; }
+.on, .off { width: 52px; height: 26px; border: medium none; background: transparent url("on-off.png") no-repeat scroll 0px 0px; text-indent: -9999px; overflow: hidden; cursor: pointer; }
+.off { background-position: 0px -26px; }
+.on:hover { background-position: -53px 0px; }
+.off:hover { background-position: -53px -26px; }
+.wifi_box { padding: 20px 0px 20px 80px; }
+.container { width: 800px; margin: 0px auto; }
+.autocomplete-suggestions { text-align: left; border: 1px solid rgb(153, 153, 153); background: rgb(255, 255, 255) none repeat scroll 0% 0%; cursor: default; overflow: auto; box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: rgb(240, 240, 240) none repeat scroll 0% 0%; }
+.autocomplete-suggestions strong { font-weight: normal; color: rgb(51, 153, 255); }
+/* ::::: http://hiwifi.com/turbo-static/turbo/web/css/retina.css?v=6017 (@media not all, not all) ::::: */
+
+@media not all, not all {
+#loginbox { background: rgb(241, 250, 254) url("login_logo_131224@2x.png") no-repeat scroll center 60px / auto 146px; }
+#header #logo { background: transparent url("logo_130726@2x.png") no-repeat scroll 0% 0% / 119px auto; }
+#main { background: transparent url("bg_131206@2x.png") no-repeat scroll 135px -20px / 824px 562px; }
+#nav li a { background-image: url("sidenav_icons_130715@2x.png"); background-size: auto 409px; }
+#map a .icon { background: transparent url("round_buttons_130715@2x.png") no-repeat scroll 0% 0% / auto 240px; }
+.stream { background-image: url("stream_131206@2x.gif"); background-size: 440px 188px; }
+#lans_list .lightning { background-image: url("lightning_131031@2x.png"); background-size: auto 28px; }
+.alert-icon i, #nav li a#state .alert-icon { background: transparent url("alert-icon@2x.png") no-repeat scroll 0% 0% / auto 24px; }
+#services a#plug-in .icon { background-image: url("round_buttons_130715@2x.png"); background-size: auto 240px; }
+#reboot { background-image: url("reboot_icon@2x.png"); background-size: 24px auto; }
+#internet .icon { background-image: url("internet_icon@2x.png"); background-size: 148px auto; }
+#header .top_menu a#system_netdetect .icon { background-image: url("look-over@2x.png"); background-size: 16px 16px; }
+#header .top_menu a#setting_guide .icon { background-image: url("guidepost@2x.png"); background-size: 16px 16px; }
+#header .top_menu .spotbar .spot { background-image: url("spot@2x.png"); background-size: 16px 16px; }
+#loginbox a.gobtn { position: absolute; background: transparent url("go_btn@2x.png") no-repeat scroll 0% 0% / 98px auto; }
+}
+/* ::::: http://hiwifi.com/turbo-static/turbo/web/css/sd.css?v=6017 ::::: */
+
+.sd-tip-bar { height: 50px; line-height: 50px; background: rgb(248, 197, 166) none repeat scroll 0% 0%; border-width: medium 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgb(218, 80, 32) rgb(218, 80, 32); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; position: absolute; top: 0px; margin-top: -100px; width: 658px; margin-left: -20px; font-size: 16px; color: rgb(216, 70, 19); left: 20px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }
+.sd-tip-bar.yellow { background-color: rgb(242, 241, 153); border-color: rgb(102, 102, 102); color: rgb(102, 102, 102); }
+.sd-tip-bar .icon-i-y { background: transparent url("i-y.png") no-repeat scroll 0px 0px; width: 18px; height: 18px; vertical-align: middle; display: inline-block; margin-right: 5px; }
+.sd-tip-bar .icon-i { background: transparent url("i.png") no-repeat scroll 0px 0px; width: 19px; height: 19px; vertical-align: middle; display: inline-block; margin-right: 5px; }
+.sd-tip-bar span { vertical-align: middle; }
+.sd-tip-bar a:hover { color: rgb(54, 170, 214); }
+.sd-error-box { background: rgb(248, 197, 166) none repeat scroll 0% 0%; border-width: 1px medium; border-style: solid none; border-color: rgb(218, 80, 32) -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; color: rgb(216, 70, 19); font-size: 16px; padding: 15px 0px; }
+.sd-error-box .sd-error-title { font-size: 30px; color: rgb(216, 70, 19); line-height: 30px; margin: 10px 0px; }
+.sd-error-box .info { padding-left: 60px; background: transparent url("i-big.png") no-repeat scroll 0px 0px; width: 320px; margin: auto; }
+.sd-btn { text-align: center; color: rgb(255, 255, 255); font-size: 16px; width: 175px; height: 36px; line-height: 36px; vertical-align: middle; display: inline-block; margin-left: 5px; }
+.sd-btn:hover { color: rgb(255, 255, 255); }
+.sd-btn-b { width: 227px; }
+.sd-btn-normal { background: rgb(16, 134, 200) none repeat scroll 0% 0%; }
+.sd-btn-success { background: rgb(12, 155, 69) none repeat scroll 0% 0%; }
+.sd-btn-disabled { background: rgb(217, 217, 217) none repeat scroll 0% 0%; color: rgb(153, 153, 153); cursor: default; }
+.sd-btn-disabled:hover { color: rgb(153, 153, 153); }
+.sd-loading { background: transparent url("loading_001.gif") no-repeat scroll 0px 0px; width: 16px; height: 16px; display: inline-block; vertical-align: middle; }
+.sd-form-box { width: 380px; margin: auto; }
+.sd-form-box .sd-label { font-size: 14px; color: rgb(39, 39, 39); padding: 25px 0px 15px; }
+.sd-form-box .sd-label span { color: rgb(218, 80, 32); }
+.sd-form-box td { vertical-align: top; }
+.sd-form-box .info { color: rgb(148, 148, 148); font-size: 12px; padding: 50px 0px 40px; }
+.sd-form-box .warning { color: rgb(218, 80, 32); padding: 5px; }
+.sd-form-box .warning-success { color: rgb(12, 155, 69); padding: 5px; }
+.sd-input { height: 34px; vertical-align: middle; border: 1px solid rgb(200, 201, 201); width: 180px; }
+.sd-btn-box { padding-top: 30px; text-align: center; }
+.sd-error-tip { background: rgb(248, 197, 166) none repeat scroll 0% 0%; border-radius: 10px; height: 50px; line-height: 50px; font-size: 16px; color: rgb(216, 70, 19); border: 1px solid rgb(218, 80, 32); width: 960px; margin: auto; }
+.sd-error-tip .icon-i { background: transparent url("i.png") no-repeat scroll 0px 0px; width: 19px; height: 19px; vertical-align: middle; display: inline-block; margin-right: 5px; }
+.sd-error-tip a:hover { color: rgb(54, 170, 214); }
